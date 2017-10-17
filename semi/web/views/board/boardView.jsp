@@ -32,8 +32,8 @@
 <link rel="stylesheet" href="../../css/animate.css">
 <link rel="stylesheet" href="../../css/templatemo_misc.css">
 <link rel="stylesheet" href="../../css/templatemo_style.css">
+<script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
-<script src="../../js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 <%-- 헤더바 끝 --%>
 
 <%-- 세로목록 --%>
@@ -146,7 +146,7 @@ table.type10 .even {
 										type="submit" value="제목검색">
 								</form>
 							</li>
-							<li class="active"><a href="../../index.html">Home</a></li>
+							<li class="active"><a href="../../index.jsp">Home</a></li>
 							<li><a href="#">카테고리</a></li>
 							<li><a href="#">공지사항</a></li>
 							<li><a href="#">게시판</a></li>
