@@ -137,52 +137,19 @@
 	
 </div>
 
+<div>
+asd
+asd
+asd
+asd
 
 
-<h2 align="center">공지사항</h2>
-<br><br>
-<div align="center">
-	<button onclick="insertPage();">글쓰기</button>
 </div>
 
-<div align="center">
-	<form action = "/first/nsearch" method = "post">
-		<input type = "search" autocomplete name="keyword" length="50">&nbsp;
-		<input type="submit" value="제목검색">
-	</form>
-</div>
 
-<br><br>
-<table align="center" width="600" border="1" cellspacing="0">
-<th>번호</th><th>제목</th><th>작성자</th><th>날짜</th><th>첨부파일</th><th>조회수</th>
-<% 
-	/* while(iter.hasNext()){
-		Map.Entry<Integer, Notice> entry = iter.next();
-		Integer key = entry.getKey();
-		Notice notice = entry.getValue(); */
-		for(Notice notice : list){		
-%>
-	<tr height="30">
-	<td><%= notice.getNoticeNo() %></td>
-	<td>
-	
-		<%= notice.getNoticeTitle() %>
-	
-	</td>
-	<td><%= notice.getNoticeWriter() %></td>
-	<td><%= notice.getNoticeDate() %></td>
-	<td align="center">
-	<%if(notice.getOriginalFileName() != null){%> 
-		●
-	<%}else {%>
-		&nbsp;
-	 <%} %>
-	</td>
-	<td><%= notice.getReadCount() %></td>
-	</tr>
-<%} %>
-</table>
-<br><br>
+
+
+
 <div align="center" style="clear:both;">
 	<a href="/first/index.jsp">시작 페이지로 이동</a>
 </div>
