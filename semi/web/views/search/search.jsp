@@ -168,9 +168,7 @@ $(document).ready(function() {
 			<div id="menu-wrapper">
 				<div class="row">
 					<div class="logo-wrapper col-md-2 col-sm-2">
-						<h1>
-							<a href="#">Han</a>
-						</h1>
+						
 					</div>
 					<!-- /.logo-wrapper -->
 					<div class="col-md-10 col-sm-10 main-menu text-right">
@@ -184,11 +182,11 @@ $(document).ready(function() {
 										type="submit" value="제목검색">
 								</form>
 							</li>
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="ar.html">카테고리</a></li>
-							<li><a href="#portfolio">공지사항</a></li>
-							<li><a href="#our-team">게시판</a></li>
-							<li><a href="#contact">마이페이지</a></li>
+							<li class="active"><a href="../../semi/index.html">Home</a></li>
+							<li><a href="#">카테고리</a></li>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">게시판</a></li>
+							<li><a href="#">마이페이지</a></li>
 						</ul>
 					</div>
 					<!-- /.main-menu -->
@@ -242,7 +240,7 @@ $(document).ready(function() {
 	<!-- 반복 끝 -->
 
 	<!--  그림 -->
-	<div>
+	<div >
 		<hgroup>
 			<h1>검색 결과</h1>
 
