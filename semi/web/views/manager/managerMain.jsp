@@ -6,51 +6,21 @@
 	<meta charset=UTF-8">
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Talent Donation - Manager/main</title>	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/semi/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/semi/css/font-awesome.css">
-    <link rel="stylesheet" href="/semi/css/animate.css">
-    <link rel="stylesheet" href="/semi/css/templatemo_misc.css">
-    <link rel="stylesheet" href="/semi/css/templatemo_style.css">
+	<title>Talent Donation - Manager/main</title>
 	<link href="/semi/css/manager/main.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/semi/css/manager/mainFonts.css" rel="stylesheet" type="text/css" media="all" />
     <script src="/semi/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 </head>
 <body>
-	<br><br>
-	<div class="container">
-		<div id="menu-wrapper">
-			<div class="row">
-				<div class="logo-wrapper col-md-2 col-sm-2">
-					<h1>
-						<a href="#">han</a>
-					</h1>
-				</div>
-				<div class="col-md-10 col-sm-10 main-menu text-right">
-					<div class="toggle-menu visible-sm visible-xs">
-						<i class="fa fa-bars"></i>
-					</div>
-					<ul class="menu-first">
-						<li class="active"><a href="#">Home_관리자</a></li>
-						<li><a href="#">회원정보</a></li>
-						<li><a href="ar.html">카테고리</a></li>
-						<li><a href="#portfolio">공지사항</a></li>
-						<li><a href="#our-team">게시판</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+	<%@ include file="managerHeader.jsp"%>
 
-	<br><br><br><br>
 	<div class="content-section" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="heading-section col-md-12 text-center">
 					<h2>재능기부 승인 요청</h2>
 				</div>
-			</div>
+			</div><br>
 			<div id="portfolio" class="container">
 				<button id="pre">◀</button>
 				<div id="column1">
@@ -86,7 +56,7 @@
 		</div>
 	</div>
 	
-	<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br>
 	<div class="content-section" id="services">
 		<div class="container" align="center">
 			<div class="row">
@@ -181,18 +151,6 @@
 		</div>
 	</div>
 	
-	<br><br>
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-xs-12 text-left">
-					<span>Copyright &copy; 2017 다재다능 (Talent Donation)</span>
-				</div>
-				<div class="col-md-4 hidden-xs text-right">
-					<a href="#top" id="go-top">Back to top</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<%@ include file="managerFooter.jsp" %>
 </body>
 </html>
