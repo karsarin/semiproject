@@ -24,6 +24,7 @@
         
         <script type="text/javascript">
         function goBoardPage() { location.href="views/board/boardView.jsp"; }
+        function goChatPage() { location.href="views/chatting/chattingDetailView.jsp"; }
         </script>
 
 
@@ -57,7 +58,12 @@
                                         <li><a href="#">카테고리</a></li>
                                         <li><a href="javascript:goBoardPage()">공지사항</a></li>
                                         <li><a href="#">게시판</a></li>                                       
-                                        <li><a href="#">마이페이지</a></li>                                 
+                                        <li><a href="#">마이페이지</a></li>
+                                        
+                                        <!-- 채팅 테스트 -->
+                                        
+										<li><a href="javascript:goChatPage()">채팅</a></li>     
+										                            
                                     </ul>                                    
                                 </div> <!-- /.main-menu -->
                             </div> <!-- /.row -->
