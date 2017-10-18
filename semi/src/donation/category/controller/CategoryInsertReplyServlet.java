@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class CategoryReplyServlet
  */
 @WebServlet("/creply")
-public class CategoryReplyServlet extends HttpServlet {
+public class CategoryInsertReplyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CategoryReplyServlet() {
+    public CategoryInsertReplyServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
