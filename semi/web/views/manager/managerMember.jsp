@@ -38,16 +38,7 @@
 	<br><br><br><br>
 
 	<div class="container1">
-		<!-- <div class="wrap">
-			<div class="search">
-				<input type="text" class="searchTerm"
-					placeholder="keyword">
-				<button type="submit" class="searchButton">
-					<i class="fa fa-search"></i>
-				</button>
-			</div>
-		</div><br><br><br> -->
-		<form action="" method="post">
+		<!-- <form action="" method="post">
 				<select name="searchType">
 					<option value="0" selected>아이디</option>
 					<option value="1">이름</option>
@@ -55,6 +46,14 @@
 				</select>
 				<input  id="searchinput" type="search" autocomplete name="keyword" length="70" placeholder="키워드">
 				<input id="searchbt" type="submit" value="검색">
+		</form><br> -->
+		<form id="search-body">
+			<button id="s-btn-body" type="submit">
+				<span id="s-btn"></span>
+			</button>
+			<div id="s-form-body">
+				<input id="s-form" type="text" placeholder="Search Keyword">
+			</div>
 		</form><br>
 
 		<table class="memberList">
