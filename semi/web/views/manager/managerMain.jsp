@@ -12,13 +12,37 @@
     <script src="/semi/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 </head>
 <body>
-	<%@ include file="managerHeader.jsp"%>
+	<br><br>
+	<div class="container">
+		<div id="menu-wrapper">
+			<div class="row">
+				<div class="logo-wrapper col-md-2 col-sm-2">
+					<h1>
+						<a href="#">han</a>
+					</h1>
+				</div>
+				<div class="col-md-10 col-sm-10 main-menu text-right">
+					<div class="toggle-menu visible-sm visible-xs">
+						<i class="fa fa-bars"></i>
+					</div>
+					<ul class="menu-first">
+						<li class="active"><a href="/semi/views/manager/managerMain.jsp">Home_관리자</a></li>
+						<li><a href="/semi/views/manager/managerMember.jsp">회원정보</a></li>
+						<li><a href="#">카테고리</a></li>
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">게시판</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br>
 
 	<div class="content-section" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="heading-section col-md-12 text-center">
-					<h2>재능기부 승인 요청</h2>
+					<h2 style="text-shadow:1px 1px 2px gray;">재능기부 승인 요청</h2>
 				</div>
 			</div><br>
 			<div id="portfolio" class="container">
@@ -61,7 +85,7 @@
 		<div class="container" align="center">
 			<div class="row">
 				<div class="heading-section col-md-12 text-center">
-					<h2>Q&A 답변 대기</h2>
+					<h2 style="text-shadow:1px 1px 2px gray;">Q&A 답변 대기</h2>
 				</div>
 			</div>
 			<table class="qnatb">
