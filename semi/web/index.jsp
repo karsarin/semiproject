@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
         <meta charset="utf-8">
         <title>Flex - Responsive HTML Template</title>
     	<meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!--  í—¤ë”ë°” -->
+        <!--  Çì´õ¹Ù -->
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         
@@ -18,12 +17,17 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/templatemo_misc.css">
         <link rel="stylesheet" href="css/templatemo_style.css">
-
-        <script src="/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-        
-        <!--  í—¤ë”ë°” ë -->
+		<script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+         
+        <!--  Çì´õ¹Ù ³¡ -->
         <link href="graph/csslinegraph/csslinegraph.css" rel="stylesheet" type="text/css" media="screen" />
         
+        <script type="text/javascript">
+        function goBoardPage() { location.href="views/board/boardView.jsp"; }
+        function goChatPage() { location.href="views/chatting/chattingDetailView.jsp"; }
+        </script>
+
+
         
     </head>
     <body>
@@ -32,7 +36,7 @@
         <![endif]-->
 
 
-<!-- í—¤ë” ë°”  -->
+<!-- Çì´õ ¹Ù  -->
 
                 <div class="main-header">
                     <div class="container">
@@ -47,14 +51,19 @@
 										<li>
 										<form action="/semi/tsearch" method="post">
 										<input type="search" name = "keyword" autocomplete>
-										<input type="submit" value="ì œëª©ê²€ìƒ‰" >
+										<input type="submit" value="Á¦¸ñ°Ë»ö" >
 										</form>
 										</li>
-                                        <li class="active"><a href="index.html">Home</a></li>
-                                        <li><a href="#">ì¹´í…Œê³ ë¦¬</a></li>
-                                        <li><a href="#">ê³µì§€ì‚¬í•­</a></li>
-                                        <li><a href="#">ê²Œì‹œíŒ</a></li>                                       
-                                        <li><a href="#">ë§ˆì´íŽ˜ì´ì§€</a></li>										                      
+                                        <li class="active"><a href="index.jsp">Home</a></li>
+                                        <li><a href="#">Ä«Å×°í¸®</a></li>
+                                        <li><a href="javascript:goBoardPage()">°øÁö»çÇ×</a></li>
+                                        <li><a href="#">°Ô½ÃÆÇ</a></li>                                       
+                                        <li><a href="#">¸¶ÀÌÆäÀÌÁö</a></li>
+                                        
+                                        <!-- Ã¤ÆÃ Å×½ºÆ® -->
+                                        
+										<li><a href="javascript:goChatPage()">Ã¤ÆÃ</a></li>     
+										                            
                                     </ul>                                    
                                 </div> <!-- /.main-menu -->
                             </div> <!-- /.row -->
@@ -62,7 +71,7 @@
                     </div> <!-- /.container -->
                 </div> <!-- /.main-header -->
             </div> <!-- /.site-header -->
-<!-- í—¤ë” ë    -->
+<!-- Çì´õ ³¡    -->
             <div class="site-slider">
                 <div class="slider">
                     <div class="flexslider">
@@ -71,8 +80,8 @@
                                 <div class="overlay"></div>
                                 <img src="images/slide1.jpg" alt="">
                                 <div class="slider-caption visible-md visible-lg">
-                                    <h2>ë‹¤ìž¬ë‹¤ëŠ¥ í™ˆíŽ˜ì´ì§€ì— ì˜¤ì‹ ê±¸ í™˜ì˜í•¨ë‹ˆë‹¤</h2>
-                                    <p>í™˜ì˜í•©ë‹ˆë‹¤</p>
+                                    <h2>´ÙÀç´Ù´É È¨ÆäÀÌÁö¿¡ ¿À½Å°É È¯¿µÇÔ´Ï´Ù</h2>
+                                    <p>È¯¿µÇÕ´Ï´Ù</p>
 <!--                                     <a href="#" class="slider-btn">Let us design!</a> -->
                                 </div>
                             </li>
@@ -80,8 +89,8 @@
                                 <div class="overlay"></div>
                                 <img src="images/slide2.jpg" alt="">
                                 <div class="slider-caption visible-md visible-lg">
-                                    <h2>ìš°ë¦¬ ëª¨ë‘ ëˆ„êµ°ê°€ì—ê²ŒëŠ” ê¸°ì¨ì„ì¤„ ìˆ˜ ìžˆëŠ” í•˜ë‚˜ì˜ ìž¬ëŠ¥ì„ ê°€ì§€ê³  ìžˆìŠµë‹ˆë‹¤</h2>
-                                    <p>ìˆ˜ìµê¸ˆì€ ì „ë¶€ ê¸°ë¶€í•©ë‹ˆë‹¤.</p>
+                                    <h2>¿ì¸® ¸ðµÎ ´©±º°¡¿¡°Ô´Â ±â»ÝÀ»ÁÙ ¼ö ÀÖ´Â ÇÏ³ªÀÇ Àç´ÉÀ» °¡Áö°í ÀÖ½À´Ï´Ù</h2>
+                                    <p>¼öÀÍ±ÝÀº ÀüºÎ ±âºÎÇÕ´Ï´Ù.</p>
 <!--                                     <a href="#" class="slider-btn">Go to Portfolio</a> -->
                                 </div>
                             </li>
@@ -89,8 +98,8 @@
                                 <div class="overlay"></div>
                                 <img src="images/slide3.jpg" alt="">
                                 <div class="slider-caption visible-md visible-lg">
-                                    <h2>ì´ í™ˆíŽ˜ì´ì§€ëŠ” 6ëª…ì˜ ê°œë°œìžë¡œ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤</h2>
-                                    <p>ì–´ì„œì˜¤ì„¸ìš”</p>
+                                    <h2>ÀÌ È¨ÆäÀÌÁö´Â 6¸íÀÇ °³¹ßÀÚ·Î ¸¸µé¾îÁ³½À´Ï´Ù</h2>
+                                    <p>¾î¼­¿À¼¼¿ä</p>
 <!--                                     <a href="#" class="slider-btn">Mobile Website</a> -->
                                 </div>
                             </li>
@@ -105,13 +114,13 @@
 
        
 
-<!-- ì¹´í…Œê³ ë¦¬ -->
+<!-- Ä«Å×°í¸® -->
 
         <div class="content-section" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>ì¹´í…Œê³ ë¦¬</h2>
+                        <h2>Ä«Å×°í¸®</h2>
                         <p>Our many talent classifications</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -215,14 +224,14 @@
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /#portfolio -->
-<!-- ì¹´í…Œê³ ë¦¬ ë-->
+<!-- Ä«Å×°í¸® ³¡-->
 
-<!-- ë„ì›€ì¤€ì‚¬ëžŒë“¤ -->
+<!-- µµ¿òÁØ»ç¶÷µé -->
 <div class="content-section" id="our-team">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>ë§Žì´ ë„ì›€ì„ ì£¼ì‹  ì „ë¬¸ê°€ë“¤</h2>
+                        <h2>¸¹ÀÌ µµ¿òÀ» ÁÖ½Å Àü¹®°¡µé</h2>
                         <p>Our people are very united for your success</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -327,15 +336,15 @@
         </div> <!-- /#our-team -->
 
 
-<!--ë§Žì´ ë„ì™€ì¤€ì‚¬ëžŒ -->
+<!--¸¹ÀÌ µµ¿ÍÁØ»ç¶÷ -->
 
 
-<!-- ìµœì‹ /ë§ˆê° -->
+<!-- ÃÖ½Å/¸¶°¨ -->
   <div class="content-section" id="services">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>ìµœì‹ /ë§ˆê°</h2>
+                        <h2>ÃÖ½Å/¸¶°¨</h2>
                         <p>We have many talents.</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -405,13 +414,13 @@
 
 
 
-<!-- ì´ìƒ‰ìž¬ëŠ¥ -->
+<!-- ÀÌ»öÀç´É -->
 
 <div class="content-section" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>ì´ìƒ‰ ìž¬ëŠ¥</h2>
+                        <h2>ÀÌ»ö Àç´É</h2>
                         <p>New Creative Talent</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -468,18 +477,18 @@
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /#portfolio -->
-<!-- ì´ìƒ‰ìž¬ëŠ¥ ë-->
+<!-- ÀÌ»öÀç´É ³¡-->
 <br>
 <br>
 <br>
 
 
-<!-- ê¸°ë¶€ í˜„í™© -->
+<!-- ±âºÎ ÇöÈ² -->
 <div class="container">
   <div class="row">
   
   <div style="float:left; margin-right:120px;">
-<h3>ê¸°ë¶€ í˜„í™©</h3>
+<h3>±âºÎ ÇöÈ²</h3>
 <p>(in year)</p>
 	
 	<dl class="csslinegraph">
@@ -526,7 +535,7 @@
 
 <div style="float:left;">
 
-    <h2>ìž¬ëŠ¥ ë³„ ê¸°ë¶€ í˜„í™©</h2>
+    <h2>Àç´É º° ±âºÎ ÇöÈ²</h2>
 	<p>(in percentages)</p>        
     
 	<dl class="csslinegraph">
@@ -574,7 +583,7 @@
 </div></div>
         
 
- <!-- ê¸°ë¶€ í˜„í™©  -->
+ <!-- ±âºÎ ÇöÈ²  -->
  
   
         <div id="footer" style="clear:both;">
